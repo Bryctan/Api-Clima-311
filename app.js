@@ -13,6 +13,10 @@ app.listen(10101, function () {
     console.log('Example app listening on port 10101!');
 });
 
+app.get('/test', function (req,res) {
+    res.send("Backend funcionando!")
+});
+
 app.post('/login', function (req, res) {
     let email = req.body.email;
     let password = req.body.password;
